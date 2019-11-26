@@ -1,0 +1,20 @@
+# RBCS package parameters:
+ &RBCS_PARM01
+ useRBCptracers = .TRUE.,
+ rbcsSingleTimeFiles = .TRUE.,
+ rbcsForcingPeriod = 86400.0,
+ rbcsForcingCycle = 31449600.0,
+ relaxMaskFile(1)='relax_coeff.bin',
+ relaxMaskFile(2)='relax_coeff.bin',
+ &end
+
+# RBCS for pTracers (read this namelist only when ptracers pkg is compiled)
+ &RBCS_PARM02
+ useRBCptrnum(1)= .TRUE.,
+ tauRelaxPTR(1)=43200.0,
+ relaxPtracerFile(1)='./relax_fields/NO_relax/NO',
+
+ useRBCptrnum(3)= .TRUE.,
+ tauRelaxPTR(3)=43200.0,
+ relaxPtracerFile(3)='./relax_fields/SI_relax/SI',
+ &end

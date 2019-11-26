@@ -1,0 +1,136 @@
+ &GCHEM_PARM01
+# .
+ nsubtime=1,
+ useDIC = .TRUE.,
+# 
+# Intger Parameters 
+
+# Real
+# **** Other: *****
+ min_val = 1.0e-6
+ dt_b = 0.020833333
+ dt_b_sec = 1800
+ dumpFreq2 = 86400
+# dt_b = 0.041666666667
+# dt_b_sec = 3600.0
+ PAR_frac = 0.43
+ ext_w = 0.03
+ ext_sp = 0.03
+ ext_lp = 0.03
+ r_SI_N = 1.0
+ r_SI_N_riv = 2.0
+ scale_tmp_phyto = 1.0
+ scale_tmp_phyto2 = 1.0
+ scale_tmp_zoo = 1.0
+ scale_tmp_decomp = 1.0
+
+# Variable sinking
+# PON_k = 1.5
+ sink_min = 15.0
+ sink_max = 0.0
+ sig_slope1 = 250.0
+ sig_mid1 = 0.15
+
+# Variable sedimentation
+# PON_flux_k = 0.4
+# sed_min = 0.1
+ sed_min = 0.0
+ sed_max = 0.0 
+ sig_slope2 = 25.0
+ sig_mid2 = 0.3
+
+# *** Small Phytoplankton: ****
+ vmax_sp = 0.4
+ k_NO_sp = 0.5
+ k_NH_sp = 0.1
+ photo_chem_sp = 0.1
+ photo_inh_sp = 4.5e-4
+ ref_resp_sp = 0.03
+ ref_mort_sp = 0.002
+ ext_excr_sp = 0.135
+ tc_v_sp = 0.0693
+ tc_m_sp = 0.0693
+ tc_r_sp = 0.0519
+#
+# Large Phytoplankton
+ vmax_lp = 0.8
+ k_NO_lp = 3.0
+ k_NH_lp = 0.3
+ k_SI_lp = 6.0
+ photo_chem_lp = 0.1
+ photo_inh_lp = 4.5e-4
+ ref_resp_lp = 0.03
+ ref_mort_lp = 0.001
+ ext_excr_lp = 0.135
+ tc_v_lp = 0.0693
+ tc_m_lp = 0.0693
+ tc_r_lp = 0.0519
+#
+# Small Zooplankton
+ gmax_sz_sp = 0.6
+ iv_sz_sp = 1.4
+ thresh_sz_sp = 0.04
+ ae_sz = 0.7
+ gge_sz = 0.3
+ tc_g_sz_sp = 0.0693
+ tc_m_sz = 0.0693
+ ref_mort_sz = 0.022
+#
+# Large Zooplankton
+ gmax_lz_sp = 0.0
+ gmax_lz_lp = 0.3
+ gmax_lz_sz = 0.3
+ thresh_lz_sp = 100.0
+ thresh_lz_lp = 0.04
+ thresh_lz_sz = 0.04
+ iv_lz_sp = 1.4
+ iv_lz_lp = 1.4
+ iv_lz_sz = 1.4
+ ae_lz = 0.7
+ gge_lz = 0.3
+ ref_mort_lz = 0.022
+ tc_g_lz_sp = 0.0693
+ tc_g_lz_lp = 0.0693
+ tc_g_lz_sz = 0.0693
+ tc_m_lz = 0.0693
+#
+# Predatory Zooplankton
+ gmax_pz_lp = 0.1
+ gmax_pz_sz = 0.1
+ gmax_pz_lz = 0.3
+ thresh_pz_lp = 0.04
+ thresh_pz_sz = 0.04
+ thresh_pz_lz = 0.04
+ iv_pz_lp = 1.4
+ iv_pz_sz = 1.4
+ iv_pz_lz = 1.4
+ ae_pz = 0.7
+ gge_pz = 0.3
+ inh_szlz_lp = 4.605
+ inh_lz_sz = 3.01
+ ref_mort_pz = 0.12
+ tc_g_pz_lp = 0.0693
+ tc_g_pz_sz = 0.0693
+ tc_g_pz_lz = 0.0693
+ tc_m_pz = 0.0693
+#
+# Decomposition 
+ ref_nitr = 0.003
+ ref_dec_PON_NH = 0.01
+ ref_dec_PON_DON = 0.05
+ ref_dec_DON_NH = 0.02
+ ref_dec_OP_SI = 0.01
+ tc_nitr = 0.0693
+ tc_dec_PON_NH = 0.0693
+ tc_dec_PON_DON = 0.0693
+ tc_dec_DON_NH = 0.0693
+ tc_dec_OP_SI = 0.0693
+#
+# Chl:C
+ sp_chl2c_min = 0.0000
+ lp_chl2c_min = 0.005
+ sp_chl2c_max = 0.015
+ lp_chl2c_max = 0.03
+ alpha_chl = 0.28
+#
+ &end

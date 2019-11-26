@@ -1,0 +1,24 @@
+# ======================
+# Offline Input Data Sets
+# =====================
+# 
+# Edited by: Taylor Shropshire 6.23.2016
+# 
+# 
+ &OFFLINE_PARM01
+ UvelFile = './input_off_link/uvel/U',
+ VvelFile = './input_off_link/vvel/V',
+ WvelFile = './input_off_link/wvel/W',
+ ThetFile = './input_off_link/tmp/T',
+ SaltFile = './input_off_link/sal/S',
+ &end
+# 
+ &OFFLINE_PARM02
+ offlineIter0 = 0,
+ deltaToffline = 1800,
+ offlineForcingPeriod = 86400.0,
+ offlineForcingCycle = 631065600.0,
+# offlineForcingCycle = 10368000.0,
+# offlineForcingCycle = 19440000.0,
+ &end
+# 

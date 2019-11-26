@@ -1,0 +1,24 @@
+# DIC parameters 
+ &ABIOTIC_PARMS
+ &end
+
+ &BIOTIC_PARMS
+ &end
+
+ &DIC_FORCING
+# ---- File ---- %
+ light_file = 'light_data_1993_2012.bin',
+ riv_nutr_file = 'riv_nutr_USGS_daily_1993_2012.bin',
+ riv_dis_file = 'riv_dis_daily_1993_2012.bin',
+
+# --- Daily Averaged Light --- %
+ DIC_forcingPeriod = 86400.0,
+ DIC_forcingCycle = 631065600.0,
+ DIC_forcingPeriod2 = 86400.0,
+ DIC_forcingCycle2 = 631065600.0, 
+
+# --- Hourly Light --- %
+# DIC_forcingPeriod = 3600.0,
+# DIC_forcingCycle = 31528800.0,
+
+ &end

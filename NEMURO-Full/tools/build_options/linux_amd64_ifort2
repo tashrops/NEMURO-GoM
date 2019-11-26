@@ -1,0 +1,74 @@
+#!/bin/bash
+#
+#  $Header: /u/gcmpack/MITgcm/tools/build_options/linux_amd64_ifort,v 1.10 2013/07/22 18:40:45 jmc Exp $
+#  $Name:  $
+#
+# Composed and tested by ce107 on ross/weddell (Opteron system)
+# Should work fine on EM64T and other AMD64 compatible Intel systems
+# a) Processor specific flags:
+#    1) for more speed on Core2 processors replace -xW with -xT
+#    2) for more speed on Pentium4 based EM64T processors replaces -xW with -xP
+# b) For more speed, provided your data size doesn't exceed 2GB you can
+# remove -fPIC which carries a performance penalty of 2-6%.
+# c) Provided that the libraries you link to are compiled with -fPIC this
+# optfile should work.
+# d) You can replace -fPIC with -mcmodel=medium which may perform faster
+# than -fPIC and still support data sizes over 2GB per process but all
+# the libraries you link to must be compiled with -fPIC or -mcmodel=medium
+# e) Changed from -O3 to -O2 to avoid buggy Intel v.10 compilers. Speed
+# impact appears to be minimal.
+#
+# MPI : DON'T FORGET to set environment variable MPI_INC_DIR to the include
+#       directory of your MPI implementation
+
+#-------
+# run with OpenMP: needs to set environment var. OMP_NUM_THREADS
+#    and generally, needs to increase the stack-size:
+#   -  sh,bash:
+#     > export OMP_NUM_THREADS=2
+#     > export KMP_STACKSIZE=400m
+#   - csh,tcsh:
+#     > setenv OMP_NUM_THREADS 2
+#     > setenv KMP_STACKSIZE 400m
+#  NOTE: with MPI+OpenMP, need to set KMP_STACKSIZE in ~/.tcshrc (but curiously,
+#        works without OMP_NUM_THREADS in ~/.tcshrc).
+#-------
+
+if test "x$MPI" = xtrue ; then
+  CC=mpicc
+  FC=mpif90
+  F90C=mpif90
+  LINK="$F90C"
+else
+  CC=icc
+  FC=ifort
+  F90C=ifort
+  LINK="$F90C"
+fi
+
+DEFINES='-DWORDLENGTH=4'
+CPP='cpp -traditional -P'
+F90FIXEDFORMAT='-fixed -Tf'
+EXTENDED_SRC_FLAG='-132'
+GET_FC_VERSION="--version"
+OMPFLAG='-openmp'
+
+NOOPTFLAGS=''
+NOOPTFILES=''
+
+FFLAGS="$FFLAGS -convert big_endian -assume byterecl"
+FFLAGS="$FFLAGS "
+
+#- might want to use '-r8' for fizhi pkg:
+#FFLAGS="$FFLAGS -r8"
+
+F90FLAGS=$FFLAGS
+F90OPTIM=$FOPTIM
+CFLAGS=' '
+
+INCLUDEDIRS='/opt/hpc/intel/include'
+INCLUDES='-I/opt/hpc/intel/include'
+LIBS='-L/opt/hpc/intel/lib64'
+#INCLUDEDIRS=' '
+#INCLUDES=' '
+#LIBS=' '

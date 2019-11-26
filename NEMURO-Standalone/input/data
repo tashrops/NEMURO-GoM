@@ -1,0 +1,46 @@
+# ====================
+# | Model parameters |
+# ====================
+# 
+# Edited By: Taylor Shropshire 6/23/16
+# 
+# Continuous equation parameters
+ &PARM01
+# note: implicityViscosity and implicitDiffusion must be set to TRUE for KPP
+ implicitViscosity = .TRUE.,
+ implicitDiffusion = .TRUE., 
+ &end 
+# 
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters = 1000,
+ cg2dTargetResidual = 1.E-13,
+ &end
+# 
+# Time stepping parameters
+ &PARM03
+ nIter0  = 0,
+ nTimeSteps = 350640,
+# nTimeSteps = 2880,
+ deltaT = 1800.0,
+ dumpFreq =  2592000,
+ monitorFreq = 2592000,
+ periodicExternalForcing=.FALSE.,
+ &end
+# 
+# Gridding parameters
+ &PARM04
+ usingCurvilinearGrid = .TRUE.,
+ horizGridFile='grid',
+ radius_fromHorizGrid=6370.E3
+ delR = 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0,
+ 25, 25, 25, 25, 25, 25, 50, 50, 50, 50, 500, 1000, 2000, 4032.27392578125,
+ &end
+#
+# Input datasets
+ &PARM05
+ bathyFile = 'depth_gom.bin',
+ &end
+# 
+#
+# Note:  diffKhT and diffKhS (horizontal diffusivity is by default set to 0)
