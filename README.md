@@ -9,7 +9,7 @@ _Taylor A Shropshire, Steven L Morey, Eric Chassignet, Alexandra Bozec, Victoria
 
 
 
-[logo]: https://github.com/tashrops/NEMURO-GoM/blob/master/Figures/1993_simulated_surf_chl.mp4 "Logo Title Text 2"
+[logo]: https://github.com/tashrops/NEMURO-GoM/blob/master/Figures/1993_simulated_surf_chl.gif "Logo Title Text 2"
 
 
 
