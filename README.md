@@ -3,8 +3,8 @@
 _Taylor A Shropshire, Steven L Morey, Eric Chassignet, Alexandra Bozec, Victoria J Coles, Michael R Landry, Rasmus Swalethorp, Glenn Zapfe, Michael R Stukel_
 
 <p style="text-align: center;">
-  Test
-  </p>
+  <Test>
+</p>
 
 <p align="center">
   <img width="600" height="417" src="Figures/1993_simulated_surf_chl.gif">
