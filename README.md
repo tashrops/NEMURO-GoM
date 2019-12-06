@@ -3,8 +3,7 @@
 _Taylor A Shropshire, Steven L Morey, Eric Chassignet, Alexandra Bozec, Victoria J Coles, Michael R Landry, Rasmus Swalethorp, Glenn Zapfe, Michael R Stukel_
 
 <p align=center>
-  NEMURO-GoM Simulated Surface Chlorophyll </br>
-  1993
+NEMURO-GoM Simulated Surface Chlorophyll </br>
 </p>
 
 <p align="center">
