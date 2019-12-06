@@ -3,8 +3,9 @@
 _Taylor A Shropshire, Steven L Morey, Eric Chassignet, Alexandra Bozec, Victoria J Coles, Michael R Landry, Rasmus Swalethorp, Glenn Zapfe, Michael R Stukel_
 
 ## 1993 Model Surface Chl
+  
 <p align="center">
-  <src="Figures/1993_simulated_surf_chl.gif">
+  <img width="460" height="300" src="Figures/1993_simulated_surf_chl.gif">
 </p>
 
 ### Abstract
