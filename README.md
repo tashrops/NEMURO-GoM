@@ -7,7 +7,7 @@ NEMURO-GoM Simulated Surface Chlorophyll </br>
 </p>
 
 <p align="center">
-  <img width="600" height="417" src="Figures/1993_simulated_surf_chl.gif">
+  <img width="600" height="417" src="figures/1993_simulated_surf_chl.gif">
 </p>
 
 ### Abstract
