@@ -3,11 +3,9 @@
 _Taylor A Shropshire, Steven L Morey, Eric Chassignet, Alexandra Bozec, Victoria J Coles, Michael R Landry, Rasmus Swalethorp, Glenn Zapfe, Michael R Stukel_
 
 <p align=center>
-  <u>1993 Model Simulated Surface Chlorophyll</u>
+  NEMURO-GoM Simulated Surface Chlorophyll </br>
+  1993
 </p>
-
-
-
 
 <p align="center">
   <img width="600" height="417" src="Figures/1993_simulated_surf_chl.gif">
