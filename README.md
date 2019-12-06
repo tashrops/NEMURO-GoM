@@ -12,10 +12,8 @@ _Taylor A Shropshire, Steven L Morey, Eric Chassignet, Alexandra Bozec, Victoria
 [logo]: https://github.com/tashrops/NEMURO-GoM/blob/master/Figures/1993_simulated_surf_chl.gif "Logo Title Text 2"
 
 
-
-
 # Contact Us
 
-If you wish to learn more about inverse modeling or need help getting any of this code to work, please don't hesitate to reach out to us at tbk14@fsu.edu or mstukel@fsu.edu. While the code here is a special case, we have additional, generalized code for solving inverse problems elsewhere (e.g. [15N-inclusive LIEM](<https://github.com/tbrycekelly/N15-LIM>)).
+If you wish to learn more about NEMURO-GoM or need help getting any of this code to work, please don't hesitate to reach out to us at tshropshire@fsu.edu or mstukel@fsu.edu. 
 
-You can also learn more about our research here ([Stukel Lab](<http://myweb.fsu.edu/mstukel/>)) or here ([TBK](http://about.tkelly.org)).
+You can also learn more about our research here ([Stukel Lab](<http://myweb.fsu.edu/mstukel/>)) 
