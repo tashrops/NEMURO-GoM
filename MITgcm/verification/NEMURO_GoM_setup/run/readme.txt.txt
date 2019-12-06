@@ -1,0 +1,1 @@
+Directory used for linking all configuration files, forcing fields, and MITgcm executable to run numerical experiments

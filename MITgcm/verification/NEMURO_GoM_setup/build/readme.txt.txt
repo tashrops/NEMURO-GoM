@@ -1,0 +1,1 @@
+Directory used for compiling the MITgcm executable
