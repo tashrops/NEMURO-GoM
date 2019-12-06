@@ -16,4 +16,4 @@ NEMURO-GoM Simulated Surface Chlorophyll </br>
 ### Contact Us
 If you wish to learn more about NEMURO-GoM or need help getting any of this code to work, please don't hesitate to reach out to us at tshropshire@fsu.edu or mstukel@fsu.edu. 
 
-You can also learn more about our research here ([Stukel Lab](<http://myweb.fsu.edu/mstukel/>)) 
+You can also learn more about our research here ([Stukel Lab](<http://myweb.fsu.edu/mstukel/personnel.html>)) 
